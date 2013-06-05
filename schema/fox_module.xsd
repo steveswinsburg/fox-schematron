@@ -680,7 +680,7 @@ Mapsets can have the following structures:
             </xs:annotation>
             <xs:attribute name="match" type="fm:fox-xpath-type" default=".">
               <xs:annotation>
-                <xs:documentation>“match” specifies the pathname of context nodes to process.</xs:documentation>
+                <xs:documentation>match specifies the pathname of context nodes to process.</xs:documentation>
               </xs:annotation>
             </xs:attribute>
             <xs:attribute name="interface" type="fm:entered-string" use="required">
@@ -728,7 +728,7 @@ Mapsets can have the following structures:
             </xs:annotation>
             <xs:attribute name="match" type="fm:fox-xpath-type" default=".">
               <xs:annotation>
-                <xs:documentation>“match” specifies the pathname of context nodes to process.</xs:documentation>
+                <xs:documentation>ï¿½matchï¿½ specifies the pathname of context nodes to process.</xs:documentation>
               </xs:annotation>
             </xs:attribute>
             <xs:attribute name="interface" type="fm:entered-string" use="required">
@@ -2341,7 +2341,7 @@ Can also be used to replace all states on the state-call stack with the state sp
             </xs:element>
             <xs:element name="primary" minOccurs="0">
               <xs:annotation>
-                <xs:documentation>Required for QUERY AUGMENT and PURGE-SELECTED modes, when the target name is not “.”.</xs:documentation>
+                <xs:documentation>Required for QUERY AUGMENT and PURGE-SELECTED modes, when the target name is not ï¿½.ï¿½.</xs:documentation>
               </xs:annotation>
               <xs:complexType>
                 <xs:sequence>
