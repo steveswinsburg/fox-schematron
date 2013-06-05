@@ -8,7 +8,7 @@
   <sch:ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
   
   <!-- path to fox attributes document -->
-  <sch:let name="fox-attrs-doc" value="document('file:///C:/pvcswork/Fox/source/schematron/schema/fox.xsd')"/>
+  <sch:let name="fox-attrs-doc" value="document('./schema/fox.xsd')"/>
   
   <!-- attribute group node-sets within fox_attributes.xsd -->
   <sch:let name="set-out-attrs" value="$fox-attrs-doc/xs:schema/xs:attributeGroup[@name = 'zzz-set-out-attr-grp']/xs:attribute/@ref"/>
