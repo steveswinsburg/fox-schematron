@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.og.dti.gov/fox" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.og.dti.gov/fox" xmlns:fm="http://www.og.dti.gov/fox_module" elementFormDefault="qualified" attributeFormDefault="unqualified" version="$Header: //Fox/branches/rel/rel4.05/source/schematron/schema/fox.xsd#3 $">
+  <!--
+   $Log:   //norton_samba/pvcsdb/pvcsdata/pvcsdb01/archives/Fox/source/schematron/schema/fox.xsd-arc  $
+
+   Rev 1.1   Jan 13 2012 14:26:46   tarthey
+Re included full attribute list to fox after removing fox_global,
+Formatting
+
+   Rev 1.100   Jun 07 2010 14:54:12   chrisc
+Added defaultAction attr
+
+   Rev 1.99   Mar 15 2010 15:31:58   apearman
+Added spell check attributes
+
+   Rev 1.98   Dec 15 2009 18:05:54   pnattresadm
+Actually added image widget attrs.
+
+   Rev 1.97   Dec 15 2009 17:48:24   pnattresadm
+Image widget attrs.
+
+   Rev 1.96   Dec 08 2009 18:37:12   pnattresadm
+Changes for upload rewrite.
+
+   Rev 1.95   Sep 18 2008 17:30:48   hannahs
+Added the hintWidth attribute for the set-out and the schema elements.
+
+   Rev 1.94   Nov 23 2007 14:45:48   jbrownadm
+Added timer and any missing widgets to fox and fox_global
+
+   Rev 1.93   Aug 14 2007 16:38:54   gwatson
+Added MIME/Content type filtering capabilities
+and fixed IE rendering security risk of text/plain as HTML.
+
+   Rev 1.92   Jul 03 2007 14:30:04   bbasson
+Added html+ and input-resizable widgets
+
+   Rev 1.91   Nov 10 2006 15:58:26   bbasson
+Added obscure widget
+
+   Rev 1.90   Jun 28 2006 10:04:34   mfletcher
+added listSortKey for sortable list tables
+
+   Rev 1.89   Jun 01 2006 15:26:44   gwatson
+Added ability to override file view prompt.
+
+   Rev 1.88   Apr 04 2006 15:29:42   gwatson
+Made large-file-uploads xpath type rather than a boolean.
+
+   Rev 1.87   Mar 14 2006 16:48:12   aashton
+datetime widget
+
+   Rev 1.86   Mar 14 2006 16:38:34   gwatson
+Added large file upload capability.
+
+   Rev 1.85   Feb 13 2006 19:05:54   jbrown
+Legacy fix
+
+   Rev 1.84   Feb 13 2006 18:09:24   aashton
+Removed errorLayout, hintLayout, errorOffSet and hintOffSet
+
+   Rev 1.83   Sep 21 2005 14:35:20   gwatson
+Added ability to overrifde file chooser prompt with fileChoosePrompt attribute on file widget.
+
+   Rev 1.82   Jun 16 2005 09:07:54   gwatson
+Added file upload attributes.
+
+   Rev 1.81   Jun 07 2005 12:37:54   gwatson
+Updated file upload functionality.
+
+   Rev 1.80   Dec 10 2004 16:45:20   aashton
+Added image Url
+
+   Rev 1.79   Oct 12 2004 18:42:18   aashton
+Added html widget
+
+   Rev 1.78   Dec 09 2003 12:22:54   psimpson
+Compare-id
+
+   Rev 1.77   Sep 23 2003 13:48:22   psimpson
+change-action attribute
+
+   Rev 1.76   Sep 08 2003 16:55:34   jbrown
+Added ns-alias attribute
+
+   Rev 1.75   Jul 16 2003 11:01:20   mfletche
+added ro to action-attr-grp
+
+   Rev 1.74   Jun 19 2003 09:53:12   psimpson
+date date+
+
+   Rev 1.73   Jun 12 2003 17:06:38   psimpson
+widget added
+
+   Rev 1.71   Jun 12 2003 11:47:14   psimpson
+externalUrl
+
+   Rev 1.70   Jun 11 2003 16:22:02   psimpson
+external-url
+
+   Rev 1.69   Jun 05 2003 11:20:02   psimpson
+col added
+
+   Rev 1.68   Jun 04 2003 10:42:36   psimpson
+default-item-widget
+
+   Rev 1.67   May 30 2003 10:42:36   psimpson
+selector+
+
+   Rev 1.66   May 13 2003 14:45:14   psimpson
+password
+
+   Rev 1.65   May 08 2003 13:08:04   psimpson
+fm:generate
+
+   Rev 1.64   Apr 02 2003 17:44:50   gwatson
+Added file-type fox attribute definitions.
+
+   Rev 1.63   Apr 02 2003 17:25:34   gwatson
+Added file-new widget type.
+
+   Rev 1.62   Apr 02 2003 17:03:26   psimpson
+superprompt
+
+   Rev 1.61   Mar 14 2003 13:40:20   psimpson
+prompt-shortStyle
+
+   Rev 1.60   Mar 06 2003 13:20:30   psimpsonadm
+url and mailto
+
+   Rev 1.59   Mar 04 2003 16:31:18   psimpsonadm
+external-url
+
+   Rev 1.58   Feb 12 2003 23:32:18   jbrown
+key-exclusive
+
+   Rev 1.57   Feb 07 2003 11:50:50   psimpson
+default-widget
+
+   Rev 1.56   Feb 07 2003 10:08:00   psimpson
+input+ widget
+
+   Rev 1.55   Jan 22 2003 14:34:18   psimpson
+externalUrl
+
+   Rev 1.54   Jan 15 2003 15:20:40   psimpson
+actionClass actionStyle
+
+   Rev 1.53   Jan 14 2003 14:25:04   psimpson
+Warning class in while modifying css
+
+   Rev 1.52   Jan 09 2003 12:45:40   psimpson
+error hint
+
+   Rev 1.51   Dec 30 2002 14:33:54   psimpson
+navAction update
+
+   Rev 1.50   Dec 30 2002 10:38:42   psimpson
+navAction
+
+   Rev 1.49   Dec 18 2002 17:13:44   psimpson
+hintoffsety
+
+   Rev 1.48   Dec 16 2002 14:01:02   jbrown
+cosmetic
+
+   Rev 1.47   Dec 16 2002 12:46:50   jbrown
+Added class attrs
+
+   Rev 1.46   Dec 12 2002 16:06:44   gwatson
+Added XPath initialisation attribute.
+
+   Rev 1.45   Dec 11 2002 17:58:02   jbrown
+Security table
+
+   Rev 1.44   Dec 11 2002 11:14:32   jbrown
+Moved phantom and file-type to no-namespace
+
+   Rev 1.43   Dec 09 2002 12:46:14   psimpson
+clear
+
+   Rev 1.42   Dec 06 2002 10:27:14   psimpson
+hint-url
+
+   Rev 1.41   Dec 02 2002 13:39:36   psimpson
+print widget
+
+   Rev 1.40   Nov 29 2002 11:56:16   psimpson
+hint fix
+
+   Rev 1.39   Nov 26 2002 09:37:00   gwatson
+Added file-type and file-storage-location types.
+
+   Rev 1.38   Nov 15 2002 17:19:00   jbrown
+added imported and key-* attrs
+
+   Rev 1.37   Nov 15 2002 11:18:14   psimpson
+confirm added
+
+   Rev 1.36   Nov 14 2002 16:54:16   psimpson
+widgets updated
+
+   Rev 1.35   Nov 13 2002 15:55:50   gwatson
+Added node initialisation attributes.
+
+   Rev 1.34   Nov 12 2002 11:29:02   psimpson
+set-out at complex collection level
+
+   Rev 1.33   Nov 07 2002 10:05:20   psimpson
+Mand added to schema element
+
+   Rev 1.32   Nov 06 2002 13:59:30   cblake
+Added mand construct
+
+   Rev 1.31   Oct 31 2002 16:29:38   psimpson
+forceVisible
+
+   Rev 1.30   Oct 28 2002 17:34:40   psimpson
+static-text
+
+   Rev 1.29   Oct 25 2002 15:13:34   psimpson
+schema fieldHeight
+
+   Rev 1.28   Oct 25 2002 12:31:52   jbrown
+Added radio group items
+
+   Rev 1.27   Oct 15 2002 15:43:44   jbrown
+input widget added
+
+   Rev 1.26   Oct 14 2002 12:01:22   psimpson
+prompt-short added
+
+   Rev 1.25   Sep 30 2002 12:05:20   jbrown
+Added selector for multi-select widgets
+
+   Rev 1.24   Sep 30 2002 10:13:46   psimpson
+prompt2 added
+
+   Rev 1.23   Sep 23 2002 11:04:36   psimpson
+extra validation added to html display parameters
+
+   Rev 1.22   Sep 20 2002 16:54:50   psimpson
+displayOrder an integer
+
+   Rev 1.21   Sep 17 2002 15:32:48   psimpson
+widget link+, button+ and alive+
+
+   Rev 1.20   Sep 17 2002 13:44:06   psimpson
+Fudge radio added
+
+   Rev 1.19   Sep 17 2002 13:12:08   psimpson
+listygap and listxgap
+
+   Rev 1.18   Sep 16 2002 17:24:06   psimpson
+fieldMaxHeight on schema level
+
+   Rev 1.17   Sep 16 2002 17:06:10   psimpson
+fieldMaxHeight
+
+   Rev 1.15   Sep 16 2002 12:39:08   jbrown
+set-out att
+
+   Rev 1.14   Sep 16 2002 12:11:42   psimpson
+layoutProcess attribute added
+
+   Rev 1.13   Sep 13 2002 09:51:48   jbrown
+fix
+
+   Rev 1.12   Sep 13 2002 09:50:12   jbrown
+minor
+
+   Rev 1.11   Sep 11 2002 11:04:58   psimpson
+action-out attributes fixed
+
+   Rev 1.10   Sep 11 2002 10:06:38   psimpson
+action-out attributes add to fox attributes group
+
+   Rev 1.9   Sep 11 2002 10:02:34   jbrown
+action-out attrs
+
+   Rev 1.8   Sep 05 2002 14:49:46   cblake
+Validation commands
+
+   Rev 1.7   Sep 02 2002 17:13:32   jbrown
+Data (Schema) button enhancements after meeting with Phil 
+
+   Rev 1.6   Aug 29 2002 11:42:40   psimpson
+set-menu added
+
+   Rev 1.5   Aug 27 2002 14:51:28   jbrown
+minor
+
+   Rev 1.4   Aug 27 2002 11:06:50   jbrown
+Start of standardisation process
+
+   Rev 1.3   Aug 23 2002 16:44:24   jbrown
+style
+
+   Rev 1.2   Aug 21 2002 14:17:48   jbrown
+Add look and set-map
+
+   Rev 1.1   Aug 19 2002 16:21:32   jbrown
+Added more attributes
+   
+   -->
+  <xs:include schemaLocation="fox_common_types.xsd"/>
+  <xs:attributeGroup name="zzz-set-out-attr-grp">
+    <xs:attribute ref="view" use="optional"/>
+    <xs:attribute ref="mode" use="optional"/>
+    <xs:attribute ref="promptLayout" use="optional"/>
+    <xs:attribute ref="formMaxCols" use="optional"/>
+    <xs:attribute ref="formColChars" use="optional"/>
+    <xs:attribute ref="layoutProcess" use="optional"/>
+    <xs:attribute ref="itemxgap" use="optional"/>
+    <xs:attribute ref="itemygap" use="optional"/>
+    <xs:attribute ref="debug" use="optional"/>
+    <xs:attribute ref="emptyText" use="optional"/>
+    <xs:attribute ref="fieldMaxHeight" use="optional"/>
+    <xs:attribute ref="fieldMaxWidth" use="optional"/>
+    <xs:attribute ref="fieldMinHeight" use="optional"/>
+    <xs:attribute ref="fieldMinWidth" use="optional"/>
+    <xs:attribute ref="listxgap" use="optional"/>
+    <xs:attribute ref="listygap" use="optional"/>
+    <xs:attribute ref="promptAlignX" use="optional"/>
+    <xs:attribute ref="promptAlignY" use="optional"/>
+    <xs:attribute ref="promptFieldGapX" use="optional"/>
+    <xs:attribute ref="promptFieldGapY" use="optional"/>
+    <xs:attribute ref="forceVisible" use="optional"/>
+    <xs:attribute ref="listTableClass"/>
+    <xs:attribute ref="listTableStyle"/>
+    <xs:attribute ref="formTableClass"/>
+    <xs:attribute ref="formTableStyle"/>
+    <xs:attribute ref="actionClass"/>
+    <xs:attribute ref="actionStyle"/>
+    <xs:attribute ref="fieldClass"/>
+    <xs:attribute ref="fieldStyle"/>
+    <xs:attribute ref="promptStyle"/>
+    <xs:attribute ref="promptClass"/>
+    <xs:attribute ref="nestedTableClass"/>
+    <xs:attribute ref="nestedTableStyle"/>
+    <xs:attribute ref="hint"/>
+    <xs:attribute ref="hintWidth"/>
+    <xs:attribute ref="default-item-widget"/>
+    <xs:attribute ref="default-date-widget"/>
+    <xs:attribute ref="default-selector-widget"/>
+    <xs:attribute ref="prompt"/>
+    <xs:attribute ref="widget"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="zzz-set-menu-attr-group">
+    <xs:attribute ref="mode" use="optional"/>
+    <xs:attribute ref="flow" use="optional"/>
+    <xs:attribute ref="menuTableClass" use="optional"/>
+    <xs:attribute ref="menuTableStyle" use="optional"/>
+    <xs:attribute ref="promptClass"/>
+    <xs:attribute ref="promptStyle"/>
+    <xs:attribute ref="actionClass"/>
+    <xs:attribute ref="actionStyle"/>
+    <xs:attribute ref="class"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="zzz-action-out-attr-grp">
+    <xs:attribute ref="widget"/>
+    <xs:attribute ref="prompt"/>
+    <xs:attribute ref="hint"/>
+    <xs:attribute ref="hint-url"/>
+    <xs:attribute ref="promptClass"/>
+    <xs:attribute ref="fieldClass"/>
+    <xs:attribute ref="promptStyle"/>
+    <xs:attribute ref="fieldStyle"/>
+    <xs:attribute ref="image"/>
+    <xs:attribute ref="image-xpath"/>
+    <xs:attribute ref="imageUrl"/>
+    <xs:attribute ref="prompt-short"/>
+    <xs:attribute ref="run"/>
+    <xs:attribute ref="mode"/>
+    <xs:attribute ref="actionClass"/>
+    <xs:attribute ref="actionStyle"/>
+    <xs:attribute ref="subject"/>
+    <xs:attribute ref="contextParams"/>
+    <xs:attribute ref="href"/>
+    <xs:attribute ref="externalUrl"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="zzz-action-attr-grp">
+    <xs:attributeGroup ref="zzz-action-out-attr-grp"/>
+    <xs:attribute ref="displayOrder"/>
+    <xs:attribute ref="confirm"/>
+    <xs:attribute ref="ro"/>
+    <xs:attribute ref="actionSpell"/>
+    <xs:attribute ref="actionSpellOk"/>
+    <xs:attribute ref="defaultAction"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="zzz-schema-element-attr-grp">
+    <xs:attribute ref="edit"/>
+    <xs:attribute ref="ro"/>
+    <xs:attribute ref="clear"/>
+    <xs:attribute ref="run"/>
+    <xs:attribute ref="displayOrder"/>
+    <xs:attribute ref="prompt"/>
+    <xs:attribute ref="prompt-short"/>
+    <xs:attribute ref="image"/>
+    <xs:attribute ref="image-xpath"/>
+    <xs:attribute ref="imageUrl"/>
+    <xs:attribute ref="action"/>
+    <xs:attribute ref="emptyText"/>
+    <xs:attribute ref="fieldWidth"/>
+    <xs:attribute ref="fieldxlock"/>
+    <xs:attribute ref="fieldylock"/>
+    <xs:attribute ref="file-storage-location"/>
+    <xs:attribute ref="hint"/>
+    <xs:attribute ref="hintWidth"/>
+    <xs:attribute ref="hint-url"/>
+    <xs:attribute ref="init-db-interface"/>
+    <xs:attribute ref="init-query"/>
+    <xs:attribute ref="init-xpath"/>
+    <xs:attribute ref="promptClass"/>
+    <xs:attribute ref="fieldClass"/>
+    <xs:attribute ref="nestedTableClass"/>
+    <xs:attribute ref="formTableClass"/>
+    <xs:attribute ref="listTableClass"/>
+    <xs:attribute ref="actionClass"/>
+    <xs:attribute ref="promptStyle"/>
+    <xs:attribute ref="fieldStyle"/>
+    <xs:attribute ref="nestedTableStyle"/>
+    <xs:attribute ref="formTableStyle"/>
+    <xs:attribute ref="listTableStyle"/>
+    <xs:attribute ref="actionStyle"/>
+    <xs:attribute ref="listxgap"/>
+    <xs:attribute ref="listygap"/>
+    <xs:attribute ref="promptAlignX"/>
+    <xs:attribute ref="promptAlignY"/>
+    <xs:attribute ref="promptFieldGapX"/>
+    <xs:attribute ref="promptFieldGapY"/>
+    <xs:attribute ref="promptLayout"/>
+    <xs:attribute ref="promptWidth"/>
+    <xs:attribute ref="visitOrder"/>
+    <xs:attribute ref="map-set"/>
+    <xs:attribute ref="map-set-attach"/>
+    <xs:attribute ref="validate-map-set"/>
+    <xs:attribute ref="validate-map-set-msg"/>
+    <xs:attribute ref="validate-xpath"/>
+    <xs:attribute ref="validate-xpath-msg"/>
+    <xs:attribute ref="validate-general-msg"/>
+    <xs:attribute ref="widget"/>
+    <xs:attribute ref="fieldMaxHeight"/>
+    <xs:attribute ref="fieldMaxWidth"/>
+    <xs:attribute ref="fieldMinHeight"/>
+    <xs:attribute ref="fieldMinWidth"/>
+    <xs:attribute ref="prompt2"/>
+    <xs:attribute ref="selector"/>
+    <xs:attribute ref="flow"/>
+    <xs:attribute ref="radio-group"/>
+    <xs:attribute ref="radio-owner"/>
+    <xs:attribute ref="fieldHeight"/>
+    <xs:attribute ref="mand"/>
+    <xs:attribute ref="formColChars"/>
+    <xs:attribute ref="formMaxCols"/>
+    <xs:attribute ref="imported"/>
+    <xs:attribute ref="key-true"/>
+    <xs:attribute ref="key-false"/>
+    <xs:attribute ref="key-null"/>
+    <xs:attribute ref="key-missing"/>
+    <xs:attribute ref="key-unrecognised"/>
+    <xs:attribute ref="key-exclusive"/>
+    <xs:attribute ref="navAction"/>
+    <xs:attribute ref="error-url"/>
+    <xs:attribute ref="href"/>
+    <xs:attribute ref="email"/>
+    <xs:attribute ref="subject"/>
+    <xs:attribute ref="contextParams"/>
+    <xs:attribute ref="prompt-shortStyle"/>
+    <xs:attribute ref="superPrompt"/>
+    <xs:attribute ref="clean"/>
+    <xs:attribute ref="case"/>
+    <xs:attribute ref="formatDate"/>
+    <xs:attribute ref="col"/>
+    <xs:attribute ref="confirm"/>
+    <xs:attribute ref="externalUrl"/>
+    <xs:attribute ref="ns-alias"/>
+    <xs:attribute ref="change-action"/>
+    <xs:attribute ref="compare-id"/>
+    <xs:attribute ref="upload-mode"/>
+    <xs:attribute ref="upload-metadata"/>
+    <xs:attribute ref="upload-window-type"/>
+    <xs:attribute ref="upload-success-action"/>
+    <xs:attribute ref="upload-fail-action"/>
+    <xs:attribute ref="upload-file-type"/>
+    <xs:attribute ref="upload-field-flow"/>
+    <xs:attribute ref="upload-prompt"/>
+    <xs:attribute ref="upload-view-prompt"/>
+    <xs:attribute ref="upload-choose-prompt"/>
+    <xs:attribute ref="upload-save-prompt"/>
+    <xs:attribute ref="upload-enable-download"/>
+    <xs:attribute ref="upload-enable-view"/>
+    <xs:attribute ref="upload-enable-description"/>
+    <xs:attribute ref="upload-button-flow"/>
+    <xs:attribute ref="upload-button-position"/>
+    <xs:attribute ref="upload-capture-field1"/>
+    <xs:attribute ref="upload-capture-field2"/>
+    <xs:attribute ref="upload-capture-field3"/>
+    <xs:attribute ref="upload-capture-field4"/>
+    <xs:attribute ref="upload-capture-field5"/>
+    <xs:attribute ref="upload-display-field1"/>
+    <xs:attribute ref="upload-display-field2"/>
+    <xs:attribute ref="upload-display-field3"/>
+    <xs:attribute ref="upload-display-field4"/>
+    <xs:attribute ref="upload-display-field5"/>
+    <xs:attribute ref="upload-prompt-field1"/>
+    <xs:attribute ref="upload-prompt-field2"/>
+    <xs:attribute ref="upload-prompt-field3"/>
+    <xs:attribute ref="upload-prompt-field4"/>
+    <xs:attribute ref="upload-prompt-field5"/>
+    <xs:attribute ref="upload-widget-style"/>
+    <xs:attribute ref="image-only"/>
+    <xs:attribute ref="image-enable-preview"/>
+    <xs:attribute ref="image-enable-rotate"/>
+    <xs:attribute ref="image-display-size"/>
+    <xs:attribute ref="image-display-width"/>
+    <xs:attribute ref="image-display-height"/>
+    <xs:attribute ref="listSortKey"/>
+    <xs:attribute ref="actionSpell"/>
+    <xs:attribute ref="actionSpellOk"/>
+    <xs:attribute ref="inputSpellWidget"/>
+    <xs:attribute ref="spell"/>
+    <xs:attribute ref="spatial-definition"/>
+    <xs:attribute ref="spatial-interface"/>
+    <xs:attribute ref="canvas-cache-key"/>
+    <xs:attribute ref="canvas-callback-action"/>
+    <xs:attribute ref="fieldGroup"/>
+    <xs:attribute ref="phantom-data-xpath"/>
+    <!-- START of fileUploadAttGrp attributes.
+          GAW: This is bad. XMLSpy V4 Rel5 will not accept the attribute group, fileUploadAttGrp, and does not
+          bring it its attributes. So for the time being, I've had to include its attributes directly here! -->
+    <!-- END of fileUploadAttGrp attributes. -->
+  </xs:attributeGroup>
+  <!--ITEM GROUP SELECTION LEVELS-->
+  <xs:attribute name="view"/>
+  <xs:attribute name="mode"/>
+  <!--ITEM ACCESS PRIVILEGES-->
+  <xs:attribute name="edit"/>
+  <xs:attribute name="run"/>
+  <xs:attribute name="ro"/>
+  <xs:attribute name="clear"/>
+  <!--ACTION CONTROL-->
+  <xs:attribute name="action"/>
+  <xs:attribute name="widget">
+    <xs:annotation>
+      <xs:documentation>The presentation widget </xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="date"/>
+        <xs:enumeration value="date+"/>
+        <xs:enumeration value="datetime"/>
+        <xs:enumeration value="datetime+"/>
+        <xs:enumeration value="button"/>
+        <xs:enumeration value="link"/>
+        <xs:enumeration value="icon"/>
+        <xs:enumeration value="iconprompt"/>
+        <xs:enumeration value="alive"/>
+        <xs:enumeration value="selector"/>
+        <xs:enumeration value="tickbox"/>
+        <xs:enumeration value="radio"/>
+        <xs:enumeration value="button+"/>
+        <xs:enumeration value="alive+"/>
+        <xs:enumeration value="link+"/>
+        <xs:enumeration value="input"/>
+        <xs:enumeration value="static-text"/>
+        <xs:enumeration value="file"/>
+        <xs:enumeration value="file-new"/>
+        <xs:enumeration value="file-upload"/>
+        <xs:enumeration value="print"/>
+        <xs:enumeration value="input+"/>
+        <xs:enumeration value="url"/>
+        <xs:enumeration value="url-btn"/>
+        <xs:enumeration value="mailto"/>
+        <xs:enumeration value="mailto-btn"/>
+        <xs:enumeration value="password"/>
+        <xs:enumeration value="selector+"/>
+        <xs:enumeration value="html"/>
+        <xs:enumeration value="obscure"/>
+        <xs:enumeration value="html+"/>
+        <xs:enumeration value="input-resizable"/>
+        <xs:enumeration value="timer+"/>
+        <xs:enumeration value="image"/>
+        <xs:enumeration value="cartographic"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <!-- SCHEMA ELEMENT DISPLAY ATTRIBUTES-->
+  <xs:attribute name="hint"/>
+  <xs:attribute name="hintWidth" type="fox-xpath-type"/>
+  <xs:attribute name="error-url" type="xs:string"/>
+  <xs:attribute name="hint-url"/>
+  <xs:attribute name="prompt"/>
+  <xs:attribute name="promptLayout">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="north"/>
+        <xs:enumeration value="west"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="promptAlignX">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="promptAlignY">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="bottom"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="promptFieldGapX" type="xs:unsignedInt"/>
+  <xs:attribute name="promptFieldGapY" type="xs:unsignedInt"/>
+  <xs:attribute name="promptWidth" type="xs:unsignedInt"/>
+  <xs:attribute name="fieldWidth" type="xs:unsignedInt"/>
+  <xs:attribute name="fieldHeight" type="xs:unsignedInt"/>
+  <xs:attribute name="formColChars" type="xs:positiveInteger">
+    <xs:annotation>
+      <xs:documentation>Number of characters allowed per form layout display grid column. Allowed against Collection Type schema elements.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="formMaxCols" type="xs:positiveInteger">
+    <xs:annotation>
+      <xs:documentation>Number of columns allowed in form layout display grid. Allowed against Collection Type schema elements.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="emptyText"/>
+  <xs:attribute name="fieldxlock" type="xs:positiveInteger"/>
+  <xs:attribute name="fieldylock">
+    <xs:simpleType>
+      <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="displayOrder" type="xs:integer"/>
+  <xs:attribute name="visitOrder" type="xs:integer"/>
+  <xs:attribute name="validate-map-set" type="yn-flag">
+    <xs:annotation>
+      <xs:documentation>This is only relevent when map-set specified, and ensures selected (or entered) values match values in the map-set. Default is Y.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="validate-xpath" type="fox-xpath-type">
+    <xs:annotation>
+      <xs:documentation>An XPATH expression which is evaluated as boolean(XPATH) , and must return true for validation to be successful.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="validate-xpath-msg">
+    <xs:annotation>
+      <xs:documentation>The prefix error text used when validate-xpath returns false. Default is "Invalid {prompt}".</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="validate-map-set-msg">
+    <xs:annotation>
+      <xs:documentation>The prefix error text used when map-set validation violation occurs. Default is "Invalid {prompt}".</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="validate-general-msg">
+    <xs:annotation>
+      <xs:documentation>The prefix error text used for general validation violation occurs. "validate-map-set-msg" and "validate-xpath-msg" are used in preference for those types of error. Overrides system generated default of "Invalid {prompt}". </xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <!-- APPLICATION / MODULE / STATE DISPLAY ATTRIBUTES-->
+  <xs:attribute name="fieldMaxHeight"/>
+  <xs:attribute name="fieldMaxWidth"/>
+  <xs:attribute name="fieldMinHeight"/>
+  <xs:attribute name="fieldMinWidth"/>
+  <xs:attribute name="itemxgap"/>
+  <xs:attribute name="itemygap"/>
+  <xs:attribute name="listxgap"/>
+  <xs:attribute name="listygap"/>
+  <xs:attribute name="layoutProcess">
+    <xs:annotation>
+      <xs:documentation>Form layout algorithum ~ NORMAL TIGHT NEWLINE</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="tight"/>
+        <xs:enumeration value="newline"/>
+        <xs:enumeration value="normal"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="image"/>
+  <xs:attribute name="image-xpath"/>
+  <xs:attribute name="imageUrl"/>
+  <xs:attribute name="map-set" type="entered-string"/>
+  <xs:attribute name="map-set-attach" type="fox-xpath-type">
+    <xs:annotation>
+      <xs:documentation>Sets the context :{map-set-attach} to the XPath specified by this attribute.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="flow">
+    <xs:simpleType>
+      <xs:restriction base="entered-string">
+        <xs:enumeration value="across"/>
+        <xs:enumeration value="down"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="debug">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="true"/>
+        <xs:enumeration value="false"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="prompt2"/>
+  <xs:attribute name="selector" type="fox-xpath-type">
+    <xs:annotation>
+      <xs:documentation>XPath targeting one nested node which specifies cardinality generator for multi-select map-set widgets.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="prompt-short">
+    <xs:annotation>
+      <xs:documentation>A constant prompt, contains no xpaths</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="radio-owner" type="fox-xpath-type">
+    <xs:annotation>
+      <xs:documentation>XPATH expression that locates an element that when common with another radio item, and the same radio-group label is in use, the item joins the logical radio set. The default is "." indicating the current record. This allows radio groups to be defined across records (i.e. within a common parent or super-parent list e.g. ".."  See also radio-group.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="radio-group" type="entered-string">
+    <xs:annotation>
+      <xs:documentation>Label string that associates distinct items to form a logical radio group. This default value is the absolute path of the item in the schema definition. This attribute allows radio groups to be defined across items. When used with radio-owner, across records can also be acheived. See also radio-owner.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="forceVisible" type="xs:boolean">
+    <xs:annotation>
+      <xs:documentation>Allows the columns headings to enabled/disabled if there is no data in the set-out</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="mand" type="fox-xpath-type">
+    <xs:annotation>
+      <xs:documentation>Item is mandatory default is not mandatory.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="init-db-interface">
+    <xs:annotation>
+      <xs:documentation>The name of a FOX module DB Interface used to initialise a node.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="init-query">
+    <xs:annotation>
+      <xs:documentation>The name of a FOX module DB Interface Query used to initialise a node.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="init-xpath">
+    <xs:annotation>
+      <xs:documentation>An XPath expression that will be used to initialise a node.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="confirm" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Message displayed in a Y/N dialog box</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="inputSpellWidget">
+    <xs:annotation>
+      <xs:documentation>Use this attribute to turn on the abc icon next to xs:string fields for spell check.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="spell">
+    <xs:annotation>
+      <xs:documentation>XPath to turn on/off whether a field is subject to spell check.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="actionSpell">
+    <xs:annotation>
+      <xs:documentation>Similar to a run should be placed on an action or phantom to indicate that the action requires spell check to run before post.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="actionSpellOk" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Message to be displayed after a successful spell check.  For use on phantoms or actions.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="defaultAction">
+    <xs:annotation>
+      <xs:documentation>Indicates the action is the default for the form and should be run if the Enter key is pressed.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="imported">
+    <xs:annotation>
+      <xs:documentation>This element must be imported from the top modules schema (not a library module schema). The module will not load if an element in the current module (or one of its libraries) is duplicated in the schema without an import attribute. Also if an element has an imported attr and it does not exist in the schema the load will fail. If a element is duplicated in schema, module, and library, schema is always dominate, then first overrides left to right.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="key-true" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The display key for true in boolean selector widgets. Default to Yes</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="key-false" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The display key for false in boolean selector widgets. Defaults to No.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="key-null" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The display key for null content selector widgets. Defaults to None. This is only used for optional elements. Mand elements use key-missing.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="key-missing" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The display key for null content selector widgets. Defaults to Select One|Many. This is only used for mand elements. Optinal elements use key-null.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="key-unrecognised" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The display key for unrecognised content selector widgets. Defaults to content string (if simple) otherwise Unrecognised.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="key-exclusive" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Used to nominate a mulit-select widgets key as being mutually exclusive from the other possible selections.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="file-storage-location">
+    <xs:annotation>
+      <xs:documentation>A storage location for any contant that can be stored in a file.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:annotation>
+        <xs:documentation>The storage location where the file resides.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="formTableClass"/>
+  <xs:attribute name="formTableStyle" type="style-type"/>
+  <xs:attribute name="menuTableClass"/>
+  <xs:attribute name="menuTableStyle" type="style-type"/>
+  <xs:attribute name="listTableClass"/>
+  <xs:attribute name="listTableStyle" type="style-type"/>
+  <xs:attribute name="nestedTableClass"/>
+  <xs:attribute name="nestedTableStyle" type="style-type"/>
+  <xs:attribute name="promptClass"/>
+  <xs:attribute name="prompt-shortStyle"/>
+  <xs:attribute name="promptStyle" type="style-type"/>
+  <xs:attribute name="fieldClass"/>
+  <xs:attribute name="fieldStyle" type="style-type"/>
+  <xs:attribute name="actionClass"/>
+  <xs:attribute name="actionStyle"/>
+  <xs:attribute name="navAction" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>The action that navigates to the screen to edit the value if an error occurs</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:simpleType name="style-type">
+    <xs:restriction base="entered-string">
+      <xs:pattern value=".*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="class"/>
+  <xs:attribute name="default-item-widget"/>
+  <xs:attribute name="default-selector-widget"/>
+  <xs:attribute name="default-date-widget"/>
+  <xs:attribute name="default-widget"/>
+  <xs:attribute name="href">
+    <xs:annotation>
+      <xs:documentation>used with the external-url widget</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="email">
+    <xs:annotation>
+      <xs:documentation>used with the mail-to widget</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="subject">
+    <xs:annotation>
+      <xs:documentation>used with email widget</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="contextParams" type="xs:boolean" default="false">
+    <xs:annotation>
+      <xs:documentation>used with url widget</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="superPrompt"/>
+  <xs:attribute name="clean">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="trim"/>
+        <xs:enumeration value="no-trim"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="case">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="upper"/>
+        <xs:enumeration value="lower"/>
+        <xs:enumeration value="initCap"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="formatDate"/>
+  <xs:attribute name="col">
+    <xs:annotation>
+      <xs:documentation>database column name</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="externalUrl"/>
+  <xs:attribute name="ns-alias" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Duplicates fox attributes from one namespace to another on self and decendents. This is useful when included  type definitions with fox markup attributes are used locally. Namespaces in the included type can be aliased into local namespaces for setout operations.</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="change-action">
+    <xs:annotation>
+      <xs:documentation>Fires an action when a piece of data changes</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="compare-id"/>
+  <xs:attribute name="upload-mode">
+    <xs:annotation>
+      <xs:documentation>The upload mode for a file upload. Interruption refers to whether the base page sends a signal to the upload window to terminate the upload in the event of a module push or pop. Interruption can only be disabled when the upload target is a DOM in a storage location (i.e. root).</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="interrupt-on-module-push-pop-upload-target-any"/>
+        <xs:enumeration value="no-interrupt-upload-target-storage-location"/>
+        <xs:enumeration value="no-interrupt-modal-upload-window"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-metadata">
+    <xs:annotation>
+      <xs:documentation>Choose the type of metadata inserted into the DOM on completion of an upload. 'Basic' stores metadata about the last successful upload. 'Diagnostic' additionally provides information about the latest upload attempt, regardless of its status. Default is basic.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="basic"/>
+        <xs:enumeration value="diagnostic"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-success-action" type="xs:string"/>
+  <xs:attribute name="upload-fail-action" type="xs:string"/>
+  <xs:attribute name="upload-file-type" type="xs:string"/>
+  <xs:attribute name="upload-enable-download" type="xs:string"/>
+  <xs:attribute name="upload-enable-view" type="xs:string"/>
+  <xs:attribute name="upload-enable-description" type="xs:string"/>
+  <xs:attribute name="upload-window-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="modal"/>
+        <xs:enumeration value="modeless"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-prompt"/>
+  <xs:attribute name="upload-view-prompt"/>
+  <xs:attribute name="upload-choose-prompt"/>
+  <xs:attribute name="upload-save-prompt"/>
+  <xs:attribute name="upload-field-flow" default="horizontal">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-button-flow" default="horizontal">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-button-position" default="south">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="north"/>
+        <xs:enumeration value="south"/>
+        <xs:enumeration value="east"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="upload-capture-field1" type="xs:string"/>
+  <xs:attribute name="upload-capture-field2" type="xs:string"/>
+  <xs:attribute name="upload-capture-field3" type="xs:string"/>
+  <xs:attribute name="upload-capture-field4" type="xs:string"/>
+  <xs:attribute name="upload-capture-field5" type="xs:string"/>
+  <xs:attribute name="upload-display-field1" type="xs:string"/>
+  <xs:attribute name="upload-display-field2" type="xs:string"/>
+  <xs:attribute name="upload-display-field3" type="xs:string"/>
+  <xs:attribute name="upload-display-field4" type="xs:string"/>
+  <xs:attribute name="upload-display-field5" type="xs:string"/>
+  <xs:attribute name="upload-prompt-field1" type="xs:string"/>
+  <xs:attribute name="upload-prompt-field2" type="xs:string"/>
+  <xs:attribute name="upload-prompt-field3" type="xs:string"/>
+  <xs:attribute name="upload-prompt-field4" type="xs:string"/>
+  <xs:attribute name="upload-prompt-field5" type="xs:string"/>
+  <xs:attribute name="upload-widget-style" type="xs:string"/>
+  <xs:attribute name="image-only" type="fox-xpath-type"/>
+  <xs:attribute name="image-enable-preview" type="fox-xpath-type"/>
+  <xs:attribute name="image-enable-rotate" type="fox-xpath-type"/>
+  <xs:attribute name="image-display-size" type="fox-xpath-type"/>
+  <xs:attribute name="image-display-width" type="fox-xpath-type"/>
+  <xs:attribute name="image-display-height" type="fox-xpath-type"/>
+  <xs:attribute name="listSortKey" type="fox-xpath-type"/>
+  <xs:attribute name="spatial-definition" type="xs:string"/>
+  <xs:attribute name="spatial-interface" type="xs:string"/>
+  <xs:attribute name="canvas-callback-action" type="xs:string"/>
+  <xs:attribute name="canvas-cache-key" type="xs:string"/>
+  <xs:attribute name="fieldGroup" type="xs:string"/>
+  <xs:attribute name="phantom-data-xpath" type="xs:string"/>
+</xs:schema>
