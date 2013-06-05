@@ -728,7 +728,7 @@ Mapsets can have the following structures:
             </xs:annotation>
             <xs:attribute name="match" type="fm:fox-xpath-type" default=".">
               <xs:annotation>
-                <xs:documentation>�match� specifies the pathname of context nodes to process.</xs:documentation>
+                <xs:documentation>match specifies the pathname of context nodes to process.</xs:documentation>
               </xs:annotation>
             </xs:attribute>
             <xs:attribute name="interface" type="fm:entered-string" use="required">
