@@ -66,6 +66,14 @@
     </sch:rule>
   </sch:pattern>
   
+  <sch:pattern id="element-attrs-fm">
+    <sch:rule context="xs:element/@*[namespace-uri() = 'http://www.og.dti.gov/fox_module']" >
+      <sch:report test="true()">
+        Use of the 'fm' namespace is not supported for schema attributes - <sch:name/>
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+  
   <!-- checks for legal attributes with illegal types in module. -->
   <sch:pattern id="attr-types">
     <sch:rule context="@*[local-name() = $fox-attrs/@name and namespace-uri() != '']">
